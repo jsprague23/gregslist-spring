@@ -11,6 +11,7 @@
       <h1>Welcome to Gregslist</h1>
     </section>
     <section>
+      <h2>Cars</h2>
       <form onsubmit="app.controllers.carController.addCar(event)">
         <input type="text" name="make" placeholder="make">
         <input type="text" name="model" placeholder="model">
@@ -20,6 +21,19 @@
         <button type="submit">SUBMIT</button>
       </form>
     </section>
+    <section>
+      <h2>Houses</h2>
+      <form onsubmit="app.controllers.houseController.addHouse(event)">
+        <input type="url" name="img" id="Image">
+        <input type="text" name="name" id="name">
+        <input type="number" name="price" id="price">
+        <input type="number" name="sqft" id="sqft">
+        <input type="number" name="beds" id="beds">
+        <input type="number" name="baths" id="baths">
+
+      </form>
+    </section>
+
     <section id="cars">
       <!-- <div>
         <img src="//placehold.it/100x100" alt="">
@@ -34,9 +48,11 @@
 
     <!-- SERVICES -->
     <script src="app/CarService.js"></script>
+    <script src="app/HouseService.js"></script>
 
     <!-- CONTROLLERS -->
     <script src="app/CarController.js"></script>
+    <script src="app/HouseController.js"></script>
 
     <!-- INITIALIZE APP -->
     <script src="app/app.js"></script>
